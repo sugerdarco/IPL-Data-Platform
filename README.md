@@ -2,7 +2,6 @@
 
 A comprehensive full-stack web application for IPL 2022 cricket analytics, featuring a Node.js/Express backend with PostgreSQL (Supabase) and a React frontend with beautiful visualizations.
 
-![IPL Analytics](https://images.entitysport.com/assets/uploads/2022/03/IPL-2022-Logo.png)
 
 ## 📊 Features
 
@@ -32,6 +31,8 @@ A comprehensive full-stack web application for IPL 2022 cricket analytics, featu
 - **148 Innings** with ball-by-ball data
 - **Batting & Bowling Statistics**
 - **League Standings** and points table
+
+![alt text](image-1.png)
 
 ## 🏗️ Tech Stack
 
@@ -71,12 +72,11 @@ npm run install:all
 
 ### 3. Configure Environment Variables
 
-Create `.env` file in the root directory:
+Create `.env` file in the frontend directory:
 
 ```env
 # Supabase PostgreSQL connection
-DATABASE_URL="postgresql://postgres:[PASSWORD]@db.[PROJECT].supabase.co:5432/postgres?pgbouncer=true"
-DIRECT_URL="postgresql://postgres:[PASSWORD]@db.[PROJECT].supabase.co:5432/postgres"
+VITE_API_URL="https://api.example.com"
 ```
 
 Create `.env` file in the `backend` directory:
@@ -102,10 +102,10 @@ npm run seed
 
 ### 5. Run the Application
 
-```bash
+<!-- ```bash
 # Run both backend and frontend concurrently
 npm run dev
-```
+``` -->
 
 Or run them separately:
 
@@ -341,14 +341,3 @@ npx prisma migrate dev
 # Reset database
 npx prisma migrate reset
 ```
-
-## 📄 License
-
-MIT License - feel free to use this project for learning and development.
-
-## 🙏 Acknowledgments
-
-- IPL data sourced from public APIs
-- Built with Prisma, Express, React, and Tailwind CSS
-- Icons from Lucide React
-- Charts by Recharts
