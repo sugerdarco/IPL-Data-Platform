@@ -16,7 +16,7 @@ const navItems = [
   { path: '/teams', label: 'Teams', icon: Trophy },
   { path: '/players', label: 'Players', icon: Users },
   { path: '/matches', label: 'Matches', icon: Calendar },
-  { path: '/betting', label: 'Betting', icon: BarChart3 },
+  // { path: '/betting', label: 'Betting', icon: BarChart3 },
 ]
 
 export default function Layout({ children }) {
